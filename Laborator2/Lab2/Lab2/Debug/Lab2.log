@@ -1,0 +1,6 @@
+﻿  Lab2.cpp
+e:\scs lab\laborator2\lab2\lab2\lab2.cpp(147): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type '__int64'
+  e:\scs lab\laborator2\lab2\lab2\lab2.cpp(147): note: consider using '%lld' in the format string
+  e:\scs lab\laborator2\lab2\lab2\lab2.cpp(147): note: consider using '%I64d' in the format string
+  Lab2.vcxproj -> E:\SCS lab\Laborator2\Lab2\Debug\Lab2.exe
+  Lab2.vcxproj -> E:\SCS lab\Laborator2\Lab2\Debug\Lab2.pdb (Full PDB)
