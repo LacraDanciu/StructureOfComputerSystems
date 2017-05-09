@@ -1,6 +1,0 @@
-vhdl work "hex2sseg.vhd"
-vhdl work "filtrwr.vhd"
-vhdl work "fifo_mem.vhd"
-vhdl work "fifo_ctrl.vhd"
-vhdl work "displ_7seg.vhd"
-vhdl work "top.vhd"

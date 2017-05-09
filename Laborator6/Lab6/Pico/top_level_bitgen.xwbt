@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=C:\Users\student\Documents\30431\MariaB\Lab6\Pico\top_level.ncd
-OUTFILE=C:\Users\student\Documents\30431\MariaB\Lab6\Pico\top_level.bit
-FAMILY=Spartan6
-PART=xc6slx16-2csg324
-WORKINGDIR=C:\Users\student\Documents\30431\MariaB\Lab6\Pico
-LICENSE=WebPack
-USER_INFO=210690077_0_0_153

@@ -1,3 +1,0 @@
-vhdl isim_temp "full_adder.vhd"
-vhdl isim_temp "carry_save_adder.vhd"
-vhdl isim_temp "Test2.vhd"

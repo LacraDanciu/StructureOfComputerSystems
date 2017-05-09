@@ -1,9 +1,0 @@
-xst -intstyle ise -ifn "C:/Users/student/Documents/30431/MariaB/Lab5/clock/counter.xst" -ofn "C:/Users/student/Documents/30431/MariaB/Lab5/clock/counter.syr" 
-netgen -intstyle ise -ar Structure -tm counter -w -dir netgen/synthesis -ofmt vhdl -sim counter.ngc counter_synthesis.vhd 
-xst -intstyle ise -ifn "C:/Users/student/Documents/30431/MariaB/Lab5/clock/counter.xst" -ofn "C:/Users/student/Documents/30431/MariaB/Lab5/clock/counter.syr" 
-ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc counter.ucf -p xc6slx16-csg324-2 counter.ngc counter.ngd  
-map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o counter_map.ncd counter.ngd counter.pcf 
-par -w -intstyle ise -ol high -mt off counter_map.ncd counter.ncd counter.pcf 
-trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml counter.twx counter.ncd -o counter.twr counter.pcf -ucf counter.ucf 
-bitgen -intstyle ise -f counter.ut counter.ncd 
-bitgen -intstyle ise -f counter.ut counter.ncd 

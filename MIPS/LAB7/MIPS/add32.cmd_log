@@ -1,5 +1,0 @@
-xst -intstyle ise -ifn "C:/Users/student/Documents/30431/MariaB/LAB7/MIPS/add32.xst" -ofn "C:/Users/student/Documents/30431/MariaB/LAB7/MIPS/add32.syr" 
-ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-2 add32.ngc add32.ngd  
-map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o add32_map.ncd add32.ngd add32.pcf 
-par -w -intstyle ise -ol high -mt off add32_map.ncd add32.ncd add32.pcf 
-trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml add32.twx add32.ncd -o add32.twr add32.pcf 

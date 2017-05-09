@@ -1,4 +1,0 @@
-vhdl work "full_adder.vhd"
-vhdl work "carry_block.vhd"
-vhdl work "CarryLA.vhd"
-vhdl work "Test1.vhd"

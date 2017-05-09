@@ -1,4 +1,0 @@
-vhdl isim_temp "full_adder.vhd"
-vhdl isim_temp "carry_block.vhd"
-vhdl isim_temp "CarryLA.vhd"
-vhdl isim_temp "Test1.vhd"

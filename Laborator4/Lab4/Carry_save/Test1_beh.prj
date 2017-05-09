@@ -1,3 +1,0 @@
-vhdl work "full_adder.vhd"
-vhdl work "carry_save_adder.vhd"
-vhdl work "Test1.vhd"
