@@ -1,0 +1,2 @@
+vhdl work "hex2sseg.vhd"
+vhdl work "displ_7seg.vhd"

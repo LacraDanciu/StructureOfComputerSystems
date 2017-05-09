@@ -1,0 +1,150 @@
+#-----------------------------------------------------------
+# PlanAhead v14.4
+# Build 222254 by xbuild on Tue Dec 18 05:23:01 MST 2012
+# Start of session at: Mon Mar 27 09:26:58 2017
+# Process ID: 4004
+# Log file: C:/Users/student/Documents/30431/MariaB/Lab5/FIFO/planAhead_run_4/planAhead.log
+# Journal file: C:/Users/student/Documents/30431/MariaB/Lab5/FIFO/planAhead_run_4/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Common 17-86] Your PlanAhead license expires in -1091 day(s)
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.4/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.4/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.4/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source C:/Users/student/Documents/30431/MariaB/Lab5/FIFO/pa.fromNetlist.tcl
+# create_project -name FIFO -dir "C:/Users/student/Documents/30431/MariaB/Lab5/FIFO/planAhead_run_4" -part xc6slx16csg324-2
+# set_property design_mode GateLvl [get_property srcset [current_run -impl]]
+# set_property edif_top_file "C:/Users/student/Documents/30431/MariaB/Lab5/FIFO/top.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {C:/Users/student/Documents/30431/MariaB/Lab5/FIFO} }
+# set_property target_constrs_file "displ_7seg.ucf" [current_fileset -constrset]
+Adding file 'C:/Users/student/Documents/30431/MariaB/Lab5/FIFO/displ_7seg.ucf' to fileset 'constrs_1'
+# add_files [list {displ_7seg.ucf}] -fileset [get_property constrset [current_run]]
+# link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc6slx16csg324-2
+Release 14.4 - ngc2edif P.49d (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Release 14.4 - ngc2edif P.49d (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design top.ngc ...
+WARNING:NetListWriters:298 - No output is written to top.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file top.edif ...
+ngc2edif: Total memory usage is 58432 kilobytes
+
+Parsing EDIF File [./planAhead_run_4/FIFO.data/cache/top_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_4/FIFO.data/cache/top_ngc_zx.edif]
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Loading clock regions from C:/Xilinx/14.4/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.4/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/ClockBuffers.xml
+Loading package pin functions from C:/Xilinx/14.4/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from C:/Xilinx/14.4/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/csg324/Package.xml
+Loading io standards from C:/Xilinx/14.4/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/14.4/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.4/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [C:/Users/student/Documents/30431/MariaB/Lab5/FIFO/displ_7seg.ucf]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'data[0]' [C:/Users/student/Documents/30431/MariaB/Lab5/FIFO/displ_7seg.ucf:40]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'data[1]' [C:/Users/student/Documents/30431/MariaB/Lab5/FIFO/displ_7seg.ucf:41]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'data[2]' [C:/Users/student/Documents/30431/MariaB/Lab5/FIFO/displ_7seg.ucf:42]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'data[3]' [C:/Users/student/Documents/30431/MariaB/Lab5/FIFO/displ_7seg.ucf:43]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'data[4]' [C:/Users/student/Documents/30431/MariaB/Lab5/FIFO/displ_7seg.ucf:44]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'data[5]' [C:/Users/student/Documents/30431/MariaB/Lab5/FIFO/displ_7seg.ucf:45]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'data[6]' [C:/Users/student/Documents/30431/MariaB/Lab5/FIFO/displ_7seg.ucf:46]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'data[7]' [C:/Users/student/Documents/30431/MariaB/Lab5/FIFO/displ_7seg.ucf:47]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'data[15]' [C:/Users/student/Documents/30431/MariaB/Lab5/FIFO/displ_7seg.ucf:59]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'data[14]' [C:/Users/student/Documents/30431/MariaB/Lab5/FIFO/displ_7seg.ucf:60]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'data[13]' [C:/Users/student/Documents/30431/MariaB/Lab5/FIFO/displ_7seg.ucf:61]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'data[12]' [C:/Users/student/Documents/30431/MariaB/Lab5/FIFO/displ_7seg.ucf:62]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'data[11]' [C:/Users/student/Documents/30431/MariaB/Lab5/FIFO/displ_7seg.ucf:63]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'data[10]' [C:/Users/student/Documents/30431/MariaB/Lab5/FIFO/displ_7seg.ucf:64]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'data[9]' [C:/Users/student/Documents/30431/MariaB/Lab5/FIFO/displ_7seg.ucf:65]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'data[8]' [C:/Users/student/Documents/30431/MariaB/Lab5/FIFO/displ_7seg.ucf:66]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'data[7]' [C:/Users/student/Documents/30431/MariaB/Lab5/FIFO/displ_7seg.ucf:67]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'data[6]' [C:/Users/student/Documents/30431/MariaB/Lab5/FIFO/displ_7seg.ucf:68]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'data[5]' [C:/Users/student/Documents/30431/MariaB/Lab5/FIFO/displ_7seg.ucf:69]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'data[4]' [C:/Users/student/Documents/30431/MariaB/Lab5/FIFO/displ_7seg.ucf:70]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'data[3]' [C:/Users/student/Documents/30431/MariaB/Lab5/FIFO/displ_7seg.ucf:71]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'data[2]' [C:/Users/student/Documents/30431/MariaB/Lab5/FIFO/displ_7seg.ucf:72]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'data[1]' [C:/Users/student/Documents/30431/MariaB/Lab5/FIFO/displ_7seg.ucf:73]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'data[0]' [C:/Users/student/Documents/30431/MariaB/Lab5/FIFO/displ_7seg.ucf:74]
+Finished Parsing UCF File [C:/Users/student/Documents/30431/MariaB/Lab5/FIFO/displ_7seg.ucf]
+INFO: [Designutils 20-20] Invalid constraints found, use command 'write_ucf -constraints invalid <file>' to save all the invalid constraints to a file
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  BUFGP => BUFGP (IBUF, BUFG): 1 instances
+
+Phase 0 | Netlist Checksum: 8c869bd9
+link_design: Time (s): elapsed = 00:00:21 . Memory (MB): peak = 454.223 ; gain = 99.313
+set_property iostandard LVCMOS25 [get_ports [list full]]
+save_constraints
+set_property iostandard LVCMOS33 [get_ports [list {dataIn[7]} {dataIn[6]} {dataIn[5]} {dataIn[4]} {dataIn[3]} {dataIn[2]} {dataIn[1]} {dataIn[0]}]]
+startgroup
+set_property package_pin A8 [get_ports btn_rd]
+endgroup
+set_property package_pin "" [get_ports [list  empty]]
+startgroup
+set_property package_pin C4 [get_ports rst]
+endgroup
+startgroup
+set_property package_pin C9 [get_ports btn_wr]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list btn_rd]]
+save_constraints
+set_property iostandard LVCMOS33 [get_ports [list btn_wr]]
+startgroup
+set_property package_pin U16 [get_ports empty]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list empty]]
+startgroup
+set_property package_pin V16 [get_ports full]
+endgroup
+save_constraints
+set_property iostandard LVCMOS33 [get_ports [list full]]
+set_property package_pin "" [get_ports [list  {dataIn[0]}]]
+startgroup
+set_property package_pin T5 [get_ports {dataIn[7]}]
+endgroup
+startgroup
+set_property package_pin V8 [get_ports {dataIn[6]}]
+endgroup
+startgroup
+set_property package_pin U8 [get_ports {dataIn[5]}]
+endgroup
+startgroup
+set_property package_pin N8 [get_ports {dataIn[4]}]
+endgroup
+startgroup
+set_property package_pin M8 [get_ports {dataIn[3]}]
+endgroup
+startgroup
+set_property package_pin V9 [get_ports {dataIn[2]}]
+endgroup
+startgroup
+set_property package_pin T9 [get_ports {dataIn[1]}]
+endgroup
+save_constraints
+startgroup
+set_property package_pin T10 [get_ports {dataIn[0]}]
+endgroup
+startgroup
+set_property package_pin V9 [get_ports {dataIn[2]}]
+endgroup
+save_constraints
+exit
+ERROR: [PlanAhead 12-106] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+ (See C:/Users/student/Documents/30431/MariaB/Lab5/FIFO\planAhead_pid4004.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Mon Mar 27 09:29:19 2017...
+INFO: [Common 17-83] Releasing license: PlanAhead

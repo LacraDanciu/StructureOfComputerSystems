@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# PlanAhead v14.4
+# Build 222254 by xbuild on Tue Dec 18 05:23:01 MST 2012
+# Start of session at: Mon Apr 24 08:49:23 2017
+# Process ID: 5592
+# Log file: C:/Users/student/Documents/30431/MariaB/LAB7/MIPS/planAhead_run_3/planAhead.log
+# Journal file: C:/Users/student/Documents/30431/MariaB/LAB7/MIPS/planAhead_run_3/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/student/Documents/30431/MariaB/LAB7/MIPS/pa.fromNetlist.tcl

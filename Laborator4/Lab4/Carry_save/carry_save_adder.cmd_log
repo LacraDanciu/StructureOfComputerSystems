@@ -1,0 +1,10 @@
+xst -intstyle ise -ifn "C:/Users/student/Documents/30431/MariaB/Lab4/Carry_save/carry_save_adder.xst" -ofn "C:/Users/student/Documents/30431/MariaB/Lab4/Carry_save/carry_save_adder.syr" 
+xst -intstyle ise -ifn "C:/Users/student/Documents/30431/MariaB/Lab4/Carry_save/carry_save_adder.xst" -ofn "C:/Users/student/Documents/30431/MariaB/Lab4/Carry_save/carry_save_adder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-2 carry_save_adder.ngc carry_save_adder.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o carry_save_adder_map.ncd carry_save_adder.ngd carry_save_adder.pcf 
+xst -intstyle ise -ifn "C:/Users/student/Documents/30431/MariaB/Lab4/Carry_save/carry_save_adder.xst" -ofn "C:/Users/student/Documents/30431/MariaB/Lab4/Carry_save/carry_save_adder.syr" 
+par -w -intstyle ise -ol high -mt off carry_save_adder_map.ncd carry_save_adder.ncd carry_save_adder.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-2 carry_save_adder.ngc carry_save_adder.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o carry_save_adder_map.ncd carry_save_adder.ngd carry_save_adder.pcf 
+par -w -intstyle ise -ol high -mt off carry_save_adder_map.ncd carry_save_adder.ncd carry_save_adder.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml carry_save_adder.twx carry_save_adder.ncd -o carry_save_adder.twr carry_save_adder.pcf 

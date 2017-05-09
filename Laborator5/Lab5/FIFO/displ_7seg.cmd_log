@@ -1,0 +1,17 @@
+xst -intstyle ise -ifn "C:/Users/student/Documents/30431/MariaB/Lab5/FIFO/displ_7seg.xst" -ofn "C:/Users/student/Documents/30431/MariaB/Lab5/FIFO/displ_7seg.syr" 
+xst -intstyle ise -ifn "C:/Users/student/Documents/30431/MariaB/Lab5/FIFO/displ_7seg.xst" -ofn "C:/Users/student/Documents/30431/MariaB/Lab5/FIFO/displ_7seg.syr" 
+xst -intstyle ise -ifn "C:/Users/student/Documents/30431/MariaB/Lab5/FIFO/displ_7seg.xst" -ofn "C:/Users/student/Documents/30431/MariaB/Lab5/FIFO/displ_7seg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-2 displ_7seg.ngc displ_7seg.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o displ_7seg_map.ncd displ_7seg.ngd displ_7seg.pcf 
+par -w -intstyle ise -ol high -mt off displ_7seg_map.ncd displ_7seg.ncd displ_7seg.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml displ_7seg.twx displ_7seg.ncd -o displ_7seg.twr displ_7seg.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc displ_7seg.ucf -p xc6slx16-csg324-2 displ_7seg.ngc displ_7seg.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o displ_7seg_map.ncd displ_7seg.ngd displ_7seg.pcf 
+par -w -intstyle ise -ol high -mt off displ_7seg_map.ncd displ_7seg.ncd displ_7seg.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml displ_7seg.twx displ_7seg.ncd -o displ_7seg.twr displ_7seg.pcf -ucf displ_7seg.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc displ_7seg.ucf -p xc6slx16-csg324-2 displ_7seg.ngc displ_7seg.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o displ_7seg_map.ncd displ_7seg.ngd displ_7seg.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc displ_7seg.ucf -p xc6slx16-csg324-2 displ_7seg.ngc displ_7seg.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o displ_7seg_map.ncd displ_7seg.ngd displ_7seg.pcf 
+par -w -intstyle ise -ol high -mt off displ_7seg_map.ncd displ_7seg.ncd displ_7seg.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml displ_7seg.twx displ_7seg.ncd -o displ_7seg.twr displ_7seg.pcf -ucf displ_7seg.ucf 

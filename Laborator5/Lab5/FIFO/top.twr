@@ -1,0 +1,151 @@
+--------------------------------------------------------------------------------
+Release 14.4 Trace  (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.4\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 2 -n
+3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf top.ucf
+
+Design file:              top.ncd
+Physical constraint file: top.pcf
+Device,package,speed:     xc6slx16,csg324,C,-2 (PRODUCTION 1.23 2012-12-04)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clk
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+btn_rd      |    3.638(R)|      SLOW  |   -1.621(R)|      FAST  |clk_BUFGP         |   0.000|
+btn_wr      |    3.583(R)|      SLOW  |   -1.570(R)|      FAST  |clk_BUFGP         |   0.000|
+dataIn<0>   |    3.328(R)|      SLOW  |   -1.080(R)|      FAST  |clk_BUFGP         |   0.000|
+dataIn<1>   |    2.927(R)|      SLOW  |   -0.562(R)|      FAST  |clk_BUFGP         |   0.000|
+dataIn<2>   |    3.590(R)|      SLOW  |   -1.090(R)|      FAST  |clk_BUFGP         |   0.000|
+dataIn<3>   |    3.650(R)|      SLOW  |   -0.763(R)|      FAST  |clk_BUFGP         |   0.000|
+dataIn<4>   |    2.629(R)|      SLOW  |   -0.712(R)|      FAST  |clk_BUFGP         |   0.000|
+dataIn<5>   |    2.530(R)|      SLOW  |   -0.506(R)|      FAST  |clk_BUFGP         |   0.000|
+dataIn<6>   |    2.287(R)|      SLOW  |   -0.522(R)|      FAST  |clk_BUFGP         |   0.000|
+dataIn<7>   |    2.984(R)|      SLOW  |   -0.958(R)|      FAST  |clk_BUFGP         |   0.000|
+rst         |    8.179(R)|      SLOW  |   -2.154(R)|      FAST  |clk_BUFGP         |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock clk to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+an<0>       |        11.270(R)|      SLOW  |         5.199(R)|      FAST  |clk_BUFGP         |   0.000|
+an<1>       |        11.462(R)|      SLOW  |         5.342(R)|      FAST  |clk_BUFGP         |   0.000|
+an<2>       |        11.041(R)|      SLOW  |         5.115(R)|      FAST  |clk_BUFGP         |   0.000|
+an<3>       |        10.932(R)|      SLOW  |         5.009(R)|      FAST  |clk_BUFGP         |   0.000|
+sseg<0>     |        14.810(R)|      SLOW  |         5.587(R)|      FAST  |clk_BUFGP         |   0.000|
+sseg<1>     |        14.755(R)|      SLOW  |         5.632(R)|      FAST  |clk_BUFGP         |   0.000|
+sseg<2>     |        14.763(R)|      SLOW  |         5.488(R)|      FAST  |clk_BUFGP         |   0.000|
+sseg<3>     |        14.919(R)|      SLOW  |         5.720(R)|      FAST  |clk_BUFGP         |   0.000|
+sseg<4>     |        14.915(R)|      SLOW  |         5.625(R)|      FAST  |clk_BUFGP         |   0.000|
+sseg<5>     |        14.831(R)|      SLOW  |         5.679(R)|      FAST  |clk_BUFGP         |   0.000|
+sseg<6>     |        14.642(R)|      SLOW  |         5.575(R)|      FAST  |clk_BUFGP         |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    3.807|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+dataIn<0>      |sseg<0>        |   13.170|
+dataIn<0>      |sseg<1>        |   13.032|
+dataIn<0>      |sseg<2>        |   12.788|
+dataIn<0>      |sseg<3>        |   13.186|
+dataIn<0>      |sseg<4>        |   13.275|
+dataIn<0>      |sseg<5>        |   13.098|
+dataIn<0>      |sseg<6>        |   12.919|
+dataIn<1>      |sseg<0>        |   12.418|
+dataIn<1>      |sseg<1>        |   12.497|
+dataIn<1>      |sseg<2>        |   12.474|
+dataIn<1>      |sseg<3>        |   12.661|
+dataIn<1>      |sseg<4>        |   12.523|
+dataIn<1>      |sseg<5>        |   12.573|
+dataIn<1>      |sseg<6>        |   12.384|
+dataIn<2>      |sseg<0>        |   12.517|
+dataIn<2>      |sseg<1>        |   12.760|
+dataIn<2>      |sseg<2>        |   12.830|
+dataIn<2>      |sseg<3>        |   12.874|
+dataIn<2>      |sseg<4>        |   12.622|
+dataIn<2>      |sseg<5>        |   12.786|
+dataIn<2>      |sseg<6>        |   12.647|
+dataIn<3>      |sseg<0>        |   13.736|
+dataIn<3>      |sseg<1>        |   13.856|
+dataIn<3>      |sseg<2>        |   13.149|
+dataIn<3>      |sseg<3>        |   14.035|
+dataIn<3>      |sseg<4>        |   13.841|
+dataIn<3>      |sseg<5>        |   13.947|
+dataIn<3>      |sseg<6>        |   13.743|
+dataIn<4>      |sseg<0>        |   13.747|
+dataIn<4>      |sseg<1>        |   13.609|
+dataIn<4>      |sseg<2>        |   13.365|
+dataIn<4>      |sseg<3>        |   13.763|
+dataIn<4>      |sseg<4>        |   13.852|
+dataIn<4>      |sseg<5>        |   13.675|
+dataIn<4>      |sseg<6>        |   13.496|
+dataIn<5>      |sseg<0>        |   12.901|
+dataIn<5>      |sseg<1>        |   12.980|
+dataIn<5>      |sseg<2>        |   12.957|
+dataIn<5>      |sseg<3>        |   13.144|
+dataIn<5>      |sseg<4>        |   13.006|
+dataIn<5>      |sseg<5>        |   13.056|
+dataIn<5>      |sseg<6>        |   12.867|
+dataIn<6>      |sseg<0>        |   12.756|
+dataIn<6>      |sseg<1>        |   12.999|
+dataIn<6>      |sseg<2>        |   13.069|
+dataIn<6>      |sseg<3>        |   13.113|
+dataIn<6>      |sseg<4>        |   12.861|
+dataIn<6>      |sseg<5>        |   13.025|
+dataIn<6>      |sseg<6>        |   12.886|
+dataIn<7>      |sseg<0>        |   14.069|
+dataIn<7>      |sseg<1>        |   14.189|
+dataIn<7>      |sseg<2>        |   13.482|
+dataIn<7>      |sseg<3>        |   14.368|
+dataIn<7>      |sseg<4>        |   14.174|
+dataIn<7>      |sseg<5>        |   14.280|
+dataIn<7>      |sseg<6>        |   14.076|
+---------------+---------------+---------+
+
+
+Analysis completed Mon Mar 27 11:46:01 2017 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 151 MB
+
+
+

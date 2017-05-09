@@ -1,0 +1,65 @@
+#-----------------------------------------------------------
+# PlanAhead v14.4
+# Build 222254 by xbuild on Tue Dec 18 05:23:01 MST 2012
+# Start of session at: Mon Mar 27 09:26:58 2017
+# Process ID: 4004
+# Log file: C:/Users/student/Documents/30431/MariaB/Lab5/FIFO/planAhead_run_4/planAhead.log
+# Journal file: C:/Users/student/Documents/30431/MariaB/Lab5/FIFO/planAhead_run_4/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/student/Documents/30431/MariaB/Lab5/FIFO/pa.fromNetlist.tcl
+set_property iostandard LVCMOS25 [get_ports [list full]]
+save_constraints
+set_property iostandard LVCMOS33 [get_ports [list {dataIn[7]} {dataIn[6]} {dataIn[5]} {dataIn[4]} {dataIn[3]} {dataIn[2]} {dataIn[1]} {dataIn[0]}]]
+startgroup
+set_property package_pin A8 [get_ports btn_rd]
+endgroup
+set_property package_pin "" [get_ports [list  empty]]
+startgroup
+set_property package_pin C4 [get_ports rst]
+endgroup
+startgroup
+set_property package_pin C9 [get_ports btn_wr]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list btn_rd]]
+save_constraints
+set_property iostandard LVCMOS33 [get_ports [list btn_wr]]
+startgroup
+set_property package_pin U16 [get_ports empty]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list empty]]
+startgroup
+set_property package_pin V16 [get_ports full]
+endgroup
+save_constraints
+set_property iostandard LVCMOS33 [get_ports [list full]]
+set_property package_pin "" [get_ports [list  {dataIn[0]}]]
+startgroup
+set_property package_pin T5 [get_ports {dataIn[7]}]
+endgroup
+startgroup
+set_property package_pin V8 [get_ports {dataIn[6]}]
+endgroup
+startgroup
+set_property package_pin U8 [get_ports {dataIn[5]}]
+endgroup
+startgroup
+set_property package_pin N8 [get_ports {dataIn[4]}]
+endgroup
+startgroup
+set_property package_pin M8 [get_ports {dataIn[3]}]
+endgroup
+startgroup
+set_property package_pin V9 [get_ports {dataIn[2]}]
+endgroup
+startgroup
+set_property package_pin T9 [get_ports {dataIn[1]}]
+endgroup
+save_constraints
+startgroup
+set_property package_pin T10 [get_ports {dataIn[0]}]
+endgroup
+startgroup
+set_property package_pin V9 [get_ports {dataIn[2]}]
+endgroup
+save_constraints

@@ -1,0 +1,5 @@
+vhdl work "segment7.vhd"
+vhdl work "display7.vhd"
+vhdl work "../add/kcpsm6.vhd"
+vhdl work "../add/add.vhd"
+vhdl work "../Pico/top_level.vhd"

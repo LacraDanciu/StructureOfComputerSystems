@@ -1,0 +1,474 @@
+Release 14.4 - xst P.49d (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: displ_7seg.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "displ_7seg.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "displ_7seg"
+Output Format                      : NGC
+Target Device                      : xc6slx16-2-csg324
+
+---- Source Options
+Top Module Name                    : displ_7seg
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\student\Documents\30431\MariaB\Lab5\FIFO\hex2sseg.vhd" into library work
+Parsing entity <hex2sseg>.
+Parsing architecture <Behavioral> of entity <hex2sseg>.
+Parsing VHDL file "C:\Users\student\Documents\30431\MariaB\Lab5\FIFO\displ_7seg.vhd" into library work
+Parsing entity <displ_7seg>.
+Parsing architecture <Behavioral> of entity <displ_7seg>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <displ_7seg> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <hex2sseg> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <displ_7seg>.
+    Related source file is "C:\Users\student\Documents\30431\MariaB\Lab5\FIFO\displ_7seg.vhd".
+    Found 11-bit register for signal <cntdiv>.
+    Found 11-bit adder for signal <cntdiv[10]_GND_5_o_add_0_OUT> created at line 31.
+    Found 1-bit 4-to-1 multiplexer for signal <segdata[3]_data[3]_MUX_20_o> created at line 42.
+    Found 1-bit 4-to-1 multiplexer for signal <segdata[3]_data[2]_MUX_24_o> created at line 42.
+    Found 1-bit 4-to-1 multiplexer for signal <segdata[3]_data[1]_MUX_28_o> created at line 42.
+    Found 1-bit 4-to-1 multiplexer for signal <segdata[3]_data[0]_MUX_32_o> created at line 42.
+WARNING:Xst:737 - Found 1-bit latch for signal <an<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <an<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <an<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <an<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  11 D-type flip-flop(s).
+	inferred   4 Latch(s).
+	inferred   7 Multiplexer(s).
+Unit <displ_7seg> synthesized.
+
+Synthesizing Unit <hex2sseg>.
+    Related source file is "C:\Users\student\Documents\30431\MariaB\Lab5\FIFO\hex2sseg.vhd".
+    Found 16x7-bit Read Only RAM for signal <sseg>
+    Summary:
+	inferred   1 RAM(s).
+Unit <hex2sseg> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 16x7-bit single-port Read Only RAM                    : 1
+# Adders/Subtractors                                   : 1
+ 11-bit adder                                          : 1
+# Registers                                            : 1
+ 11-bit register                                       : 1
+# Latches                                              : 4
+ 1-bit latch                                           : 4
+# Multiplexers                                         : 7
+ 1-bit 2-to-1 multiplexer                              : 3
+ 1-bit 4-to-1 multiplexer                              : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <displ_7seg>.
+The following registers are absorbed into counter <cntdiv>: 1 register on signal <cntdiv>.
+Unit <displ_7seg> synthesized (advanced).
+
+Synthesizing (advanced) Unit <hex2sseg>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_sseg> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <hex>           |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <sseg>          |          |
+    -----------------------------------------------------------------------
+Unit <hex2sseg> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 16x7-bit single-port distributed Read Only RAM        : 1
+# Counters                                             : 1
+ 11-bit up counter                                     : 1
+# Multiplexers                                         : 7
+ 1-bit 2-to-1 multiplexer                              : 3
+ 1-bit 4-to-1 multiplexer                              : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:3002 - This design contains one or more registers/latches that are directly
+   incompatible with the Spartan6 architecture. The two primary causes of this is
+   either a register or latch described with both an asynchronous set and
+   asynchronous reset, or a register or latch described with an asynchronous
+   set or reset which however has an initialization value of the opposite 
+   polarity (i.e. asynchronous reset with an initialization value of 1).
+    While this circuit can be built, it creates a sub-optimal implementation
+   in terms of area, power and performance. For a more optimal implementation
+   Xilinx highly recommends one of the following:
+
+          1) Remove either the set or reset from all registers and latches
+             if not needed for required functionality
+          2) Modify the code in order to produce a synchronous set
+             and/or reset (both is preferred)
+          3) Ensure all registers have the same initialization value as the
+             described asynchronous set or reset polarity
+          4) Use the -async_to_sync option to transform the asynchronous
+             set/reset to synchronous operation
+             (timing simulation highly recommended when using this option)
+
+  Please refer to http://www.xilinx.com search string "Spartan6 asynchronous set/reset" for more details.
+
+  List of register instances with asynchronous set and reset:
+    an_1 in unit <displ_7seg>
+    an_0 in unit <displ_7seg>
+    an_2 in unit <displ_7seg>
+    an_3 in unit <displ_7seg>
+
+
+Optimizing unit <displ_7seg> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block displ_7seg, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 11
+ Flip-Flops                                            : 11
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : displ_7seg.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 49
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 10
+#      LUT2                        : 4
+#      LUT4                        : 7
+#      LUT6                        : 4
+#      MUXCY                       : 10
+#      VCC                         : 1
+#      XORCY                       : 11
+# FlipFlops/Latches                : 15
+#      FDC                         : 11
+#      LD                          : 4
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 28
+#      IBUF                        : 17
+#      OBUF                        : 11
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              11  out of  18224     0%  
+ Number of Slice LUTs:                   26  out of   9112     0%  
+    Number used as Logic:                26  out of   9112     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     26
+   Number with an unused Flip Flop:      15  out of     26    57%  
+   Number with an unused LUT:             0  out of     26     0%  
+   Number of fully used LUT-FF pairs:    11  out of     26    42%  
+   Number of unique control sets:         2
+
+IO Utilization: 
+ Number of IOs:                          29
+ Number of bonded IOBs:                  29  out of    232    12%  
+    IOB Flip Flops/Latches:               4
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 11    |
+N0                                 | NONE(an_3)             | 4     |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 2.250ns (Maximum Frequency: 444.444MHz)
+   Minimum input arrival time before clock: 2.825ns
+   Maximum output required time after clock: 7.243ns
+   Maximum combinational path delay: 7.573ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 2.250ns (frequency: 444.444MHz)
+  Total number of paths / destination ports: 66 / 11
+-------------------------------------------------------------------------
+Delay:               2.250ns (Levels of Logic = 3)
+  Source:            cntdiv_9 (FF)
+  Destination:       cntdiv_10 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: cntdiv_9 to cntdiv_10
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              9   0.525   0.976  cntdiv_9 (cntdiv_9)
+     LUT1:I0->O            1   0.254   0.000  Mcount_cntdiv_cy<9>_rt (Mcount_cntdiv_cy<9>_rt)
+     MUXCY:S->O            0   0.215   0.000  Mcount_cntdiv_cy<9> (Mcount_cntdiv_cy<9>)
+     XORCY:CI->O           1   0.206   0.000  Mcount_cntdiv_xor<10> (Result<10>)
+     FDC:D                     0.074          cntdiv_10
+    ----------------------------------------
+    Total                      2.250ns (1.274ns logic, 0.976ns route)
+                                       (56.6% logic, 43.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 11 / 11
+-------------------------------------------------------------------------
+Offset:              2.825ns (Levels of Logic = 1)
+  Source:            rst (PAD)
+  Destination:       cntdiv_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: rst to cntdiv_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            11   1.328   1.038  rst_IBUF (rst_IBUF)
+     FDC:CLR                   0.459          cntdiv_0
+    ----------------------------------------
+    Total                      2.825ns (1.787ns logic, 1.038ns route)
+                                       (63.3% logic, 36.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 56 / 7
+-------------------------------------------------------------------------
+Offset:              7.243ns (Levels of Logic = 3)
+  Source:            cntdiv_10 (FF)
+  Destination:       sseg<6> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: cntdiv_10 to sseg<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              9   0.525   1.431  cntdiv_10 (cntdiv_10)
+     LUT6:I0->O            7   0.254   1.186  Mmux_segdata[3]_data[0]_MUX_32_o11 (segdata[3]_data[0]_MUX_32_o)
+     LUT4:I0->O            1   0.254   0.681  hex2sseg_u/Mram_sseg41 (sseg_4_OBUF)
+     OBUF:I->O                 2.912          sseg_4_OBUF (sseg<4>)
+    ----------------------------------------
+    Total                      7.243ns (3.945ns logic, 3.298ns route)
+                                       (54.5% logic, 45.5% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 112 / 7
+-------------------------------------------------------------------------
+Delay:               7.573ns (Levels of Logic = 4)
+  Source:            data<9> (PAD)
+  Destination:       sseg<6> (PAD)
+
+  Data Path: data<9> to sseg<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.328   0.958  data_9_IBUF (data_9_IBUF)
+     LUT6:I2->O            7   0.254   1.186  Mmux_segdata[3]_data[1]_MUX_28_o11 (segdata[3]_data[1]_MUX_28_o)
+     LUT4:I0->O            1   0.254   0.681  hex2sseg_u/Mram_sseg61 (sseg_6_OBUF)
+     OBUF:I->O                 2.912          sseg_6_OBUF (sseg<6>)
+    ----------------------------------------
+    Total                      7.573ns (4.748ns logic, 2.825ns route)
+                                       (62.7% logic, 37.3% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    2.250|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.79 secs
+ 
+--> 
+
+Total memory usage is 182420 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    5 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+
