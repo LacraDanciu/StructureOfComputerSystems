@@ -1,0 +1,31 @@
+(edif MIPS
+  (edifVersion 2 0 0)
+  (edifLevel 0)
+  (keywordMap (keywordLevel 0))
+  (status
+    (written
+      (timestamp 2017 4 24 8 49 36)
+      (program "Xilinx ngc2edif" (version "P.49d"))
+      (author "Xilinx. Inc ")
+      (comment "This EDIF netlist is to be used within supported synthesis tools")
+      (comment "for determining resource/timing estimates of the design component")
+      (comment "represented by this netlist.")
+      (comment "Command line: -mdp2sp -w -secure MIPS.ngc MIPS.edif ")))
+  (external UNISIMS
+    (edifLevel 0)
+    (technology (numberDefinition))
+  )
+
+  (library MIPS_lib
+    (edifLevel 0)
+    (technology (numberDefinition))
+  )
+
+  (design MIPS
+    (cellRef MIPS
+      (libraryRef MIPS_lib)
+    )
+    (property PART (string "xc6slx16-2-csg324") (owner "Xilinx"))
+  )
+)
+

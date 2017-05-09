@@ -1,0 +1,3 @@
+vhdl work "../MariaB/simple_design/simple.vhd"
+vhdl work "../MariaB/simple_design/kcpsm6.vhd"
+vhdl work "top_level.vhd"

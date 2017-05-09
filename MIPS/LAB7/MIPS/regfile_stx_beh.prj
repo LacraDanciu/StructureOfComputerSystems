@@ -1,0 +1,2 @@
+vhdl isim_temp "Constants.vhd"
+vhdl isim_temp "regfile.vhd"
