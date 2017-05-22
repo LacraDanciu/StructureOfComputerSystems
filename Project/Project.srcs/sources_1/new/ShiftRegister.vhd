@@ -29,20 +29,19 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
 entity ShiftRegister is
-   port( clk: in STD_LOGIC;
-         L: in STD_LOGIC; 
-         Input: in STD_LOGIC_VECTOR(15 downto 0);
-         Output: out STD_LOGIC_VECTOR(15 downto 0));
+   port(L: in STD_LOGIC; 
+        Input: in STD_LOGIC_VECTOR(15 downto 0);
+        Output: out STD_LOGIC_VECTOR(15 downto 0));
 
 end ShiftRegister;
 
 architecture Behavioral of ShiftRegister is
 begin
-   process
-   variable temp: STD_LOGIC_VECTOR(15 downto 0); 
-   variable aux: STD_LOGIC;
+   process(Input, L)
+    variable temp: STD_LOGIC_VECTOR(15 downto 0); 
+    variable aux: STD_LOGIC;
    begin
-      wait until rising_edge (clk);
+   
       temp := Input; 
       -- shift right
       if L='1' then 
@@ -60,4 +59,5 @@ begin
       end if;
       Output <= temp;
     end process;
+    
 end Behavioral;

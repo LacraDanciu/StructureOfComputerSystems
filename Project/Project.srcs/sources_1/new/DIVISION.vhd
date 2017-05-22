@@ -104,9 +104,10 @@ signal b_load, a_load, b_temp, a_sum, a_perm: STD_LOGIC_VECTOR(8 downto 0) :=(ot
 signal negativeBoth, negativeOne: STD_LOGIC;
 signal AUXB, auxQuotient: STD_LOGIC_VECTOR(7 downto 0);
 signal AUXA: STD_LOGIC_VECTOR(15 downto 0);
+signal AUXC:  STD_LOGIC_VECTOR(8 downto 0);
 begin
 
-INITIALIZE: process(A, B, AUXA, AUXB)
+INITIALIZE: process(A, B, AUXA, AUXB, negativeBoth, negativeOne)
             begin
                 negativeBoth <= A(15) and B(7);
                 if (negativeBoth = '1') then
@@ -135,7 +136,9 @@ INITIALIZE: process(A, B, AUXA, AUXB)
 q_perm <= AUXA(7 downto 0) when loadb = '1' else q_load(7 downto 1) & not a_load(8);
 a_perm <= '0' & AUXA(15 downto 8) when loadb = '1' else a_sum;
 
-divider: REGISTERCOMP generic map(n => 9) port map('0' & AUXB, loadb, clk, reset, b_load);
+AUXC <= '0' & AUXB;
+
+divider: REGISTERCOMP generic map(n => 9) port map(AUXC, loadb, clk, reset, b_load);
 
 dut2: ADDWITHOVER port map(a_load, b_temp, subb, a_sum, tout, ovf);
                        

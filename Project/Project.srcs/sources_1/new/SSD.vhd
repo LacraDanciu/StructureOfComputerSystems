@@ -53,7 +53,7 @@ begin
 		end if;
 	end process;
 	
-	process(count(15 downto 14))
+	process(count(15 downto 14), digit0, digit1, digit2, digit3)
 	begin
 		case count(15 downto 14) is
 			when "00" => mux1 <= digit0;

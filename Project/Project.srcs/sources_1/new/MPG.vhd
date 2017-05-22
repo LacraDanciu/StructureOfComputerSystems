@@ -39,7 +39,7 @@ end MPG;
 
 architecture Behavioral of MPG is
 
-signal count:std_logic_vector(15 downto 0);
+signal count:std_logic_vector(15 downto 0):= X"0000";
 signal q1:std_logic_vector(4 downto 0);
 signal q2:std_logic_vector(4 downto 0);
 signal q3:std_logic_vector(4 downto 0);
@@ -49,6 +49,9 @@ begin
  begin
     if rising_edge(clk)then
     count<=count+1;
+        if (count > X"FFFF") then
+            count <= X"0000";
+        end if;
     end if;
  end process;
  
@@ -64,11 +67,11 @@ begin
   process(clk)
  begin
     if rising_edge(clk)then
-    q2<=q1;
-    q3<=q2;
+    q2 <= q1;
+    q3 <= q2;
     end if;
  end process;
  
- enable<= not q3 and q2;
+ enable <= not q3 and q2;
 	
 end Behavioral;

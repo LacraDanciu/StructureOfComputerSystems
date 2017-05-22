@@ -1,2 +1,0 @@
-vhdl isim_temp "mips_constants.vhd"
-vhdl isim_temp "instruction_register.vhd"
